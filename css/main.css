@@ -751,6 +751,10 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
+  .team__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
