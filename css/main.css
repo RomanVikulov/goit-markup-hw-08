@@ -547,6 +547,12 @@ textarea {
   color: var(--primary-text-color);
 }
 
+@media screen and (max-width: 1200px) {
+  .feature {
+    padding-bottom: 60px;
+  }
+}
+
 .feature__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,6 +628,12 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    display: none;
+  }
 }
 
 .about {

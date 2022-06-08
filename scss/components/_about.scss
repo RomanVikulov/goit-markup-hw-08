@@ -1,7 +1,14 @@
 /* Деятельности */
+
 .icon {
   display: flex;
   position: relative;
+}
+
+.about {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .about {
