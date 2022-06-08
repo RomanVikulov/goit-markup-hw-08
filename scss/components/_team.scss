@@ -1,9 +1,10 @@
 /* Команда */
 
 .team {
-  background-color: var(--back-fon-color);
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: var(--back-fon-color);
 
   &__title {
     font-weight: 700;
@@ -12,12 +13,19 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
-    display: flex;
-    margin-top: 50px;
     list-style: none;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &__item {
@@ -26,8 +34,14 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    &:not(:last-child) {
-      margin-right: 30px;
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 
