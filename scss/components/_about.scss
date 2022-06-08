@@ -6,6 +6,9 @@
 }
 
 .about {
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
   padding-bottom: 94px;
   font-size: 0px;
 
@@ -51,9 +54,5 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-  }
-
-  @media screen and (max-width: 1200px) {
-    display: none;
   }
 }

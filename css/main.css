@@ -547,7 +547,7 @@ textarea {
   color: var(--primary-text-color);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .feature {
     padding-bottom: 60px;
   }
@@ -635,6 +635,12 @@ textarea {
   font-size: 0px;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .about {
+    display: none;
+  }
+}
+
 .about__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -683,17 +689,17 @@ textarea {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1200px) {
-  .about {
-    display: none;
-  }
-}
-
 /* Команда */
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--back-fon-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .team {
+    padding-top: 60px;
+  }
 }
 
 .team__title {
@@ -703,12 +709,19 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .team__title {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 1.18;
   }
 }
 
@@ -731,15 +744,15 @@ textarea {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 1200px) {
-  .team__item {
-    margin-bottom: 30px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .team__item:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
