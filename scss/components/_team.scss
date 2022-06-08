@@ -50,6 +50,8 @@
     }
 
     @media screen and (max-width: 767px) {
+      flex-basis: 100%;
+
       &:not(:last-child) {
         margin-bottom: 30px;
       }
