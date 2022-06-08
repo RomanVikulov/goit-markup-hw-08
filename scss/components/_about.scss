@@ -1,0 +1,54 @@
+/* Деятельности */
+.icon {
+  display: flex;
+  position: relative;
+}
+
+.about {
+  padding-bottom: 94px;
+  font-size: 0px;
+
+  &__title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+  }
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    max-width: 370px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__list-caption {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background-color: var(--bgk-list-caption);
+  }
+
+  &__paragraph {
+    color: var(--fon-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}

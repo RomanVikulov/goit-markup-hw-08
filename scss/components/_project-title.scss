@@ -1,0 +1,99 @@
+/* Список проектов */
+
+.project-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.project-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105%;
+
+  transform: translateY(100%);
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &-text {
+    padding: 63px 24px;
+    color: var(--fon-color);
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+  }
+
+  &-box {
+    position: relative;
+    overflow: hidden;
+    width: 370px;
+    height: 294px;
+  }
+}
+
+.block-title {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.project-container {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  text-decoration: none;
+
+  &:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+.project-link {
+  display: block;
+  font-style: normal;
+
+  color: var(--secondary-color);
+  text-decoration: none;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: var(--box-shadow-carts);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.project-link:hover .overlay,
+.project-link:focus .overlay {
+  transform: translateY(0);
+}

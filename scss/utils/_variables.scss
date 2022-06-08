@@ -1,0 +1,59 @@
+:root {
+  --primary-text-color: #212121;
+  --accent-color: #2196f3;
+  --accent-color-hov-foc: #188ce8;
+  --secondary-color: #757575;
+  --fon-color: #ffffff;
+  --back-fon-color: #f5f4fa;
+  --back-color: #2f303a;
+  --icon-color-bg: #44454e;
+  --icon-color: #afb1b8;
+  --box-shadow-color: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --box-shadow-sec-color: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  --box-shadow-carts: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  --lisy-caption: rgba(255, 255, 255, 1);
+  --bgk-list-caption: rgba(47, 48, 58, 0.8);
+  --bgk-backdrop: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  padding-top: 80px;
+
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--fon-color);
+  color: var(--primary-text-color);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto auto;
+}
