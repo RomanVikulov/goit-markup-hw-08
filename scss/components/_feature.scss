@@ -39,7 +39,7 @@
   }
 
   &__item:not(:last-child) {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px - 0.02px) {
       margin-bottom: 30px;
     }
   }
