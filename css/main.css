@@ -857,6 +857,13 @@ textarea {
   padding: 94px 0px;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .clients__block {
   font-size: 36px;
   line-height: 1.16;
@@ -864,6 +871,14 @@ textarea {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   color: #212121;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .clients__block {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
 }
 
 .clients__list {
@@ -909,6 +924,13 @@ textarea {
 
 .clients__item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .clients__item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
 .clients__link:hover .clients__icon,

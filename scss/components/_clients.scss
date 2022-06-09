@@ -3,6 +3,11 @@
 .clients {
   padding: 94px 0px;
 
+  @media screen and (max-width: 1199.98px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   &__block {
     font-size: 36px;
     line-height: 1.16;
@@ -11,6 +16,12 @@
     margin-bottom: 50px;
 
     color: #212121;
+
+    @media screen and (max-width: 1199.98px) {
+      font-size: 28px;
+      line-height: 1.18;
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
@@ -45,6 +56,13 @@
 
   &__item:not(:last-child) {
     margin-right: 30px;
+  }
+
+  &__item {
+    @media screen and (max-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
   }
 }
 
