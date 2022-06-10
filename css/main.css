@@ -123,9 +123,17 @@ button {
   margin-left: auto;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   .header__list {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -136,14 +144,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-  .container.header__nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
 }
 
 .nav {
@@ -200,36 +200,6 @@ button {
   margin-left: 50px;
 }
 
-.menu-button {
-  width: 40px;
-  height: 40px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 12px 8px;
-  border: none;
-  background-color: transparent;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button .is-open .icon-cross {
-  display: block;
-}
-
-.menu-button .is-open .icon-menu {
-  display: none;
-}
-
 .header-icons {
   margin-right: 10px;
   fill: var(--secondary-color);
@@ -275,6 +245,38 @@ button {
 .header-link-mail:hover,
 .header-link-mail:focus {
   color: var(--accent-color);
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 10px 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 767px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-icon {
+  padding: 12px 8px;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 /* Герой */
