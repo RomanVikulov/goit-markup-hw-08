@@ -59,7 +59,8 @@ button {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -80,8 +81,14 @@ button {
   }
 }
 
-.header .logo {
-  margin-bottom: 0px;
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -91,8 +98,12 @@ button {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  display: block;
-  margin-bottom: 20px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #2196f3;
 }
 
@@ -101,12 +112,17 @@ button {
 }
 
 .header {
-  position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 10;
   background-color: var(--fon-color);
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    position: fixed;
+  }
 }
 
 .header-logo {
@@ -134,15 +150,7 @@ button {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .header__nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-.container.header__nav {
+.menu-container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,10 +161,6 @@ button {
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 10px 0;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -205,16 +209,16 @@ button {
   margin-left: 93px;
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (max-width: 767.98px) {
-  .nav__list {
-    display: none;
-  }
 }
 
 .nav__link {

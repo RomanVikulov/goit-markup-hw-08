@@ -1,5 +1,7 @@
-.header .logo {
-  margin-bottom: 0px;
+.header__container {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -9,8 +11,13 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  display: block;
-  margin-bottom: 20px;
+
+  text-decoration: none;
+
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   color: #2196f3;
 }
 
@@ -19,15 +26,17 @@
 }
 
 .header {
-  position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
 
   z-index: 10;
 
   background-color: var(--fon-color);
   border-bottom: 1px solid #ececec;
 
+  @media screen and(min-width:1200px) {
+    position: fixed;
+  }
   &-logo {
     color: black;
   }
@@ -48,15 +57,9 @@
       display: none;
     }
   }
-
-  &__nav {
-    @media screen and (max-width: 768px) {
-      justify-content: space-between;
-    }
-  }
 }
 
-.container.header__nav {
+.menu-container {
   position: relative;
 
   display: flex;
@@ -64,8 +67,6 @@
 }
 
 .menu-button {
-  display: inline-flex;
-  margin: 10px 0;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -110,14 +111,13 @@
 }
 
 .nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   margin-left: 93px;
 
   &__list {
     display: flex;
-
-    @media screen and (max-width: 767.98px) {
-      display: none;
-    }
   }
 
   &__link {
