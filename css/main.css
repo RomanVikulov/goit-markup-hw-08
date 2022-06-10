@@ -20,10 +20,15 @@
 }
 
 body {
-  padding-top: 80px;
   font-family: 'Roboto', sans-serif;
   background-color: var(--fon-color);
   color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding-top: 80px;
+  }
 }
 
 p,
