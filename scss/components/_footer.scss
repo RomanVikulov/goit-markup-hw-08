@@ -23,9 +23,11 @@
   }
 
   &__container {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+    }
   }
 
   &__mail,
