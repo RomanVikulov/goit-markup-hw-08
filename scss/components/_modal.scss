@@ -1,5 +1,6 @@
 .modal {
-  width: 528px;
+  max-width: 528px;
+  width: 100%;
 
   @media screen and (max-width: 1199.98px) {
     max-width: 450px;
