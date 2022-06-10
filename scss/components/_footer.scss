@@ -5,8 +5,20 @@
   padding-bottom: 60px;
   background-color: var(--back-color);
 
+  &__container {
+    @media screen and(min-width:768px) {
+      display: contents;
+      justify-content: center;
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
   &__form {
-    display: flex;
+    @media screen and(min-width:768px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__item:not(:last-child) {
@@ -22,14 +34,6 @@
     text-decoration: none;
   }
 
-  &__container {
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: baseline;
-      justify-content: center;
-    }
-  }
-
   &__mail,
   &__tel {
     text-decoration: none;
@@ -38,6 +42,13 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.logo {
+  @media screen and(max-width:1200px) {
+    font-size: 24px;
+    line-height: 1.16;
   }
 }
 
@@ -51,10 +62,22 @@
 
 .footer__networks-block {
   align-items: baseline;
+
+  @media screen and(max-width:768px) {
+    margin-bottom: 60px;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .footer__networks-list {
   display: flex;
+
+  @media screen and(max-width:768px) {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .footer__networks-link {
@@ -83,10 +106,23 @@
   color: var(--fon-color);
   margin-bottom: 20px;
   padding-bottom: 0px;
+
+  justify-content: center;
+  text-align: center;
 }
 
 .footer__contacts-block {
-  margin-right: 70px;
+  @media screen and(max-width:768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and(min-Width:1200px) {
+    margin-right: 70px;
+  }
+
+  @media screen and(max-width:768px) {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .footer__link-icon {
@@ -94,7 +130,12 @@
 }
 
 .footer__subscribe-block {
-  margin-left: 93px;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  @media screen and(min-width:1200px) {
+    margin-left: 93px;
+  }
 }
 
 .footer__subscribe-text {
@@ -110,10 +151,9 @@
 }
 
 .subscribe-form-email {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
   font-size: 16px;
   line-height: 1.25;
   color: #fff;
@@ -124,6 +164,10 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and(min-width:1200px) {
+    margin-right: 12px;
+  }
 }
 
 .button-submit {
@@ -142,6 +186,10 @@
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and(max-width:1200px) {
+    margin-top: 20px;
+  }
 
   &:hover,
   &:focus {
