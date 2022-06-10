@@ -33,15 +33,17 @@
           </li>
         </ul>
 
-        <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+        <!--Мобилное меню-->
+
+        <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="mobile-menu"
+          data-menu-button>
           <svg class="menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="icon-cross" href="./images/icon/symbol-defs.svg#icon-menu-mobile-close"></use>
             <use class="icon-menu" href="./images/icon/symbol-defs.svg#icon-menu-mobile"></use>
           </svg>
         </button>
 
-        <!--Мобилное меню-->
-        <div class="mobile-menu">
+        <div class="mobile-menu" id="mobile-menu" data-menu>
           <ul class="mobile-menu__nav">
             <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__nav-link">Студия</a></li>
             <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__nav-link">Портфолио</a></li>
