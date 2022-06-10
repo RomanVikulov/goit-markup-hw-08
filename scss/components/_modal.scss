@@ -1,6 +1,11 @@
 .modal {
   width: 528px;
 
+  @media screen and (max-width: 1199.98px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -39,10 +44,19 @@
   }
 
   &-title {
+    @media screen and (max-width: 1199px) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    @media screen and(min-width:1200px) {
+      font-size: 20px;
+      line-height: 1.15;
+    }
+
     display: flex;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+
     text-align: center;
     letter-spacing: 0.03em;
     justify-content: center;
@@ -158,8 +172,16 @@ textarea {
   position: absolute;
 
   &-label {
-    font-size: 14px;
-    line-height: 1.71;
+    @media screen and(max-width:1199px) {
+      font-size: 12px;
+      line-height: 1.16;
+    }
+
+    @media screen and(min-width:1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+
     letter-spacing: 0.03em;
     color: var(--secondary-color);
 
