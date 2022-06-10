@@ -162,7 +162,7 @@ button {
   background-color: transparent;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -330,11 +330,8 @@ button {
 }
 
 .hero-button {
-  width: 200px;
-  height: 50px;
   padding: 10px 32px;
   display: inline-block;
-  font-family: inherit;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -624,6 +621,7 @@ textarea {
 
 @media screen and (max-width: 1200px) {
   .feature {
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
