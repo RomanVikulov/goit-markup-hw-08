@@ -81,14 +81,13 @@ button {
   }
 }
 
-.header__container {
+.header.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .logo {
@@ -97,7 +96,6 @@ button {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,7 +188,6 @@ button {
 
 .mobile-menu {
   display: none;
-  position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
@@ -1199,6 +1196,19 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.footer__contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
