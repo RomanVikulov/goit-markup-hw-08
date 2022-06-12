@@ -452,6 +452,16 @@ button {
   color: var(--fon-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
 .hero-button {
   padding: 10px 32px;
   display: inline-block;
