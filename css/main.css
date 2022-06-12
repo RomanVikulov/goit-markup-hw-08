@@ -1463,15 +1463,26 @@ textarea {
 }
 
 /* Кнопки фильтра */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .button-btn {
@@ -1498,18 +1509,23 @@ textarea {
           box-shadow: var(--box-shadow-color);
 }
 
+.button .button-item {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.button .button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .subscribe-icon {
   margin-left: 10px;
 }
 
-.button-item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .btn-btn {
   font-size: 0px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* Список проектов */
