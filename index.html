@@ -19,7 +19,12 @@
     <div class="container header__nav">
       <a class="logo" href="" aria-label="Логотип сайту WebStudio">Web<span
           class="logo__studio--black">Studio</span></a>
-
+      <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="mobile-menu"
+        data-menu-button>
+        <svg class="menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/icon/symbol-defs.svg#icon-menu-mobile"></use>
+        </svg>
+      </button>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -55,13 +60,7 @@
     </div>
     <!--Мобилное меню-->
     <div class="menu-container">
-      <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="mobile-menu"
-        data-menu-button>
-        <svg class="menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-          <use class="icon-cross" href="./images/icon/symbol-defs.svg#icon-menu-mobile-close"></use>
-          <use class="icon-menu" href="./images/icon/symbol-defs.svg#icon-menu-mobile"></use>
-        </svg>
-      </button>
+
 
       <div class="mobile-menu" id="mobile-menu" data-menu>
         <ul class="mobile-menu__nav">
@@ -82,6 +81,12 @@
           <li class="mobile-menu__item"><a href="" class="mobile-menu__socials-link">Facebook</a></li>
           <li class="mobile-menu__item"><a href="" class="mobile-menu__socials-link">LinkedIn</a></li>
         </ul>
+        <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="mobile-menu"
+          data-menu-button>
+          <svg class="menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/icon/symbol-defs.svg#icon-menu-mobile-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </header>

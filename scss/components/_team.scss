@@ -99,7 +99,15 @@
 .team__icon-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.team__icon-item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .team__icon-svg {
