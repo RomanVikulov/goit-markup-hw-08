@@ -116,8 +116,7 @@
   height: 100vh;
   max-height: 796px;
 
-  padding-top: 48px;
-  padding-left: 40px;
+  padding: 48px 40px;
 
   font-size: 20px;
 
@@ -181,7 +180,7 @@
   }
 }
 
-.mobile-menu__item:not(:last-child) {
+.mobile-menu__item-nav:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -190,9 +189,29 @@
   margin-bottom: 64px;
 }
 
+.mobile-menu__item-contacts:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .mobile-menu__socials {
   display: flex;
   flex-wrap: wrap;
+}
+
+.mobile-menu__item-socials:not(:last-child) {
+  margin-right: 20px;
+  position: relative;
+
+  ::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    display: inline-block;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
 }
 
 .nav {
