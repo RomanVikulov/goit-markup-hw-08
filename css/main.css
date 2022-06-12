@@ -1545,12 +1545,14 @@ textarea {
   color: #757575;
 }
 
-.project-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .project-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .portfolio-img {
@@ -1596,18 +1598,24 @@ textarea {
   padding: 20px 24px;
 }
 
-.project-container {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  text-decoration: none;
+@media screen and (min-width: 1200px) {
+  .project-container {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    text-decoration: none;
+  }
+  .project-container:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
+  .project-container:nth-child(3n) {
+    margin-right: 0px;
+  }
 }
 
-.project-container:nth-child(-n + 6) {
-  margin-bottom: 30px;
-}
-
-.project-container:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (max-width: 1199px) {
+  .project-container {
+    margin-bottom: 30px;
+  }
 }
 
 .project-link {
