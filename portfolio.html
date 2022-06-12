@@ -15,7 +15,7 @@
 
 <body>
   <!--Шапка-->
-  <header class="header">
+  <header class="header container">
     <div class="container header__nav">
       <a class="logo" href="" aria-label="Логотип сайту WebStudio">Web<span
           class="logo__studio--black">Studio</span></a>
@@ -23,10 +23,10 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="./index.html">Студия</a>
+            <a class="nav__link nav__link--current" href="./index.html">Студия</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
+            <a class="nav__link" href="./portfolio.html">Портфолио</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="">Контакты</a>
@@ -50,6 +50,38 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
+    </div>
+    <!--Мобилное меню-->
+    <div class="menu-container">
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+        <svg class="menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-cross__icon-close" href="./images/icon/symbol-defs.svg#icon-menu-mobile-close"></use>
+          <use class="icon-menu__icon-open" href="./images/icon/symbol-defs.svg#icon-menu-mobile"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu is-open" id="mobile-menu" data-menu>
+        <ul class="mobile-menu__item">
+          <li class="mobile-menu__item-nav"><a href="./index.html" class="mobile-menu__nav-link">Студия</a></li>
+          <li class="mobile-menu__item-nav"><a href="./portfolio.html" class="mobile-menu__nav-link">Портфолио</a></li>
+          <li class="mobile-menu__item-nav"><a href="" class="mobile-menu__nav-link">Контакты</a></li>
+        </ul>
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-menu__item-contacts">
+            <a href="tel:+380961111111" class="mobile-menu__contacts-link tel">+38
+              096 111
+              11 11</a>
+          </li>
+          <li class="mobile-menu__item-contacts">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link mail">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__socials">
+          <li class="mobile-menu__item-socials"><a href="" class="mobile-menu__socials-link">Instagram</a></li>
+          <li class="mobile-menu__item-socials"><a href="" class="mobile-menu__socials-link">Twitter</a></li>
+          <li class="mobile-menu__item-socials"><a href="" class="mobile-menu__socials-link">Facebook</a></li>
+          <li class="mobile-menu__item-socials"><a href="" class="mobile-menu__socials-link">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -239,7 +271,6 @@
       <div class="footer__contacts-block">
         <a class="logo" href="" aria-label="Логотип сайту WebStudio">Web<span class="logo__studio--white">Studio</span>
         </a>
-
         <address class="address">
           <ul class="footer-list">
             <li class="footer__item">
@@ -255,7 +286,7 @@
           </ul>
         </address>
       </div>
-      <div class="footer__networks-block">
+      <div class="footer__networks-block container">
         <h2 class="footer__join-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
         <ul class="footer__networks-list">
           <li class="footer__networks-item">
@@ -288,9 +319,10 @@
           </li>
         </ul>
       </div>
-      <div class="footer__subscribe-block">
-        <h2 class="footer__subscribe-text">Подпишитесь на рассылку</h2>
-        <form class="form">
+      <form class="footer__form">
+        <div class="footer__subscribe-block">
+          <h2 class="footer__subscribe-text">Подпишитесь на рассылку</h2>
+
           <label for="footer-email"></label>
           <input class="subscribe-form-email" type="email" name="mail" id="footer-email" placeholder="E-mail" />
 
@@ -301,8 +333,8 @@
               </svg>
             </span>
           </button>
-        </form>
-      </div>
+      </form>
+    </div>
     </div>
   </footer>
 
