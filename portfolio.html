@@ -23,10 +23,10 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link nav__link--current" href="./index.html">Студия</a>
+            <a class="nav__link " href="./index.html">Студия</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="">Контакты</a>
@@ -269,56 +269,59 @@
   <!--Подвал-->
   <footer class="footer">
     <div class="footer__container container">
-      <div class="footer__contacts-block">
-        <a class="logo" href="" aria-label="Логотип сайту WebStudio">Web<span class="logo__studio--white">Studio</span>
-        </a>
-        <address class="address">
-          <ul class="footer-list">
-            <li class="footer__item">
-              <a class="footer__address" href="https://goo.gl/maps/Pvmzu7NSPGujkEMB6" target="_blank"
-                rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+      <div class="footer__main">
+        <div class="footer__contacts-block">
+          <a class="logo" href="" aria-label="Логотип сайту WebStudio">Web<span
+              class="logo__studio--white">Studio</span>
+          </a>
+          <address class="address">
+            <ul class="footer-list">
+              <li class="footer__item">
+                <a class="footer__address" href="https://goo.gl/maps/Pvmzu7NSPGujkEMB6" target="_blank"
+                  rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__mail" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__tel" href="tel:380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__networks-block container">
+          <h2 class="footer__join-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+          <ul class="footer__networks-list">
+            <li class="footer__networks-item">
+              <a class="footer__networks-link" href="" aria-label="Instagram">
+                <svg class="footer__link-icon" width="20" height="20">
+                  <use href="./images/icon/symbol-defs.svg#icon-instagram2"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer__item">
-              <a class="footer__mail" href="mailto:info@example.com">info@example.com</a>
+            <li class="footer__networks-item">
+              <a class="footer__networks-link" href="" aria-label="Twitter">
+                <svg class="footer__link-icon" width="20" height="20">
+                  <use href="./images/icon/symbol-defs.svg#icon-twitter2"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer__item">
-              <a class="footer__tel" href="tel:380991111111">+38 099 111 11 11</a>
+            <li class="footer__networks-item">
+              <a class="footer__networks-link" href="" aria-label="Facebook">
+                <svg class="footer__link-icon" width="20" height="20">
+                  <use href="./images/icon/symbol-defs.svg#icon-facebook2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__networks-item">
+              <a class="footer__networks-link" href="" aria-label="Linkedin">
+                <svg class="footer__link-icon" width="20" height="20">
+                  <use href="./images/icon/symbol-defs.svg#icon-linkedin2"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-      <div class="footer__networks-block container">
-        <h2 class="footer__join-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-        <ul class="footer__networks-list">
-          <li class="footer__networks-item">
-            <a class="footer__networks-link" href="" aria-label="Instagram">
-              <svg class="footer__link-icon" width="20" height="20">
-                <use href="./images/icon/symbol-defs.svg#icon-instagram2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__networks-item">
-            <a class="footer__networks-link" href="" aria-label="Twitter">
-              <svg class="footer__link-icon" width="20" height="20">
-                <use href="./images/icon/symbol-defs.svg#icon-twitter2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__networks-item">
-            <a class="footer__networks-link" href="" aria-label="Facebook">
-              <svg class="footer__link-icon" width="20" height="20">
-                <use href="./images/icon/symbol-defs.svg#icon-facebook2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__networks-item">
-            <a class="footer__networks-link" href="" aria-label="Linkedin">
-              <svg class="footer__link-icon" width="20" height="20">
-                <use href="./images/icon/symbol-defs.svg#icon-linkedin2"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
       <form class="footer__form">
         <div class="footer__subscribe-block">
@@ -338,6 +341,7 @@
     </div>
     </div>
   </footer>
+
 
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
