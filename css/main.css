@@ -51,7 +51,8 @@ button {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -957,6 +958,7 @@ textarea {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin: 15px;
   background-color: var(--back-fon-color);
 }
 
@@ -1078,6 +1080,8 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .team__icon-item {
@@ -1719,6 +1723,9 @@ textarea {
 }
 
 .block-title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -1744,7 +1751,14 @@ textarea {
 }
 
 .project-link {
-  display: block;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-style: normal;
   color: var(--secondary-color);
   text-decoration: none;
