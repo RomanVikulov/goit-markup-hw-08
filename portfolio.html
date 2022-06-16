@@ -112,8 +112,14 @@
           <li class="project-container">
             <a class="project-link" href="./portfolio.html">
               <div class="overlay-box">
-                <img class="portfolio-img" src="./images/portfolio/texnokryak.jpg" alt="главная страница веб-сайта"
-                  width="370" height="294" />
+                <picture>
+                  <img class="portfolio-img" srcset="./images/portfolio/texnokryak-mob.jpg 450w, ./images/portfolio/texnokryak-mob@2x.jpg 900w,
+											./images/portfolio/texnokryak-tabl.jpg 355w, ./images/portfolio/texnokryak-tabl@2x.jpg 709w,
+											./images/portfolio/texnokryak-desk.jpg 370w, ./images/portfolio/texnokryak-desk.jpg@2x.jpg 740w"
+                    src="./images/portfolio/texnokryak-mob.jpg" alt="главная страница веб-сайта"
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (max-width:767px) 450px, 100vw"
+                    width="450" height="294" loading="lazy" />
+                </picture>
                 <div class="overlay">
                   <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
