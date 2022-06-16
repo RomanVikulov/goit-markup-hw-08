@@ -71,6 +71,26 @@
     }
   }
 
+  &__image {
+    width: 100%;
+    height: 100%;
+
+    @media screen and(min-width: 480px) {
+      width: 450px;
+      height: 460px;
+    }
+
+    @media screen and(min-width: 768px) {
+      width: 354px;
+      height: 374px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: 270px;
+      height: 260px;
+    }
+  }
+
   &__block {
     padding-top: 30px;
     padding-bottom: 30px;
