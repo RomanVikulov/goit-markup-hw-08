@@ -88,19 +88,13 @@
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     text-decoration: none;
-
-    &:nth-child(-n + 6) {
-      margin-bottom: 30px;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0px;
-    }
   }
 }
 
-.project-container {
-  margin-bottom: 30px;
+.project-container:not(:last-child) {
+  @media screen and(max-width:768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .project-link {
