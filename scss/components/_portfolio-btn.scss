@@ -45,8 +45,17 @@
 }
 
 .button .button-item {
-  margin-bottom: 15px;
   display: inline-block;
+
+  @media screen and(min-width:768px) {
+    margin-bottom: 0;
+  }
+}
+
+.button .button-item:nth-child(-n + 3) {
+  @media screen and(max-width:768px) {
+    margin-bottom: 15px;
+  }
 }
 
 .button .button-item:not(:last-child) {
